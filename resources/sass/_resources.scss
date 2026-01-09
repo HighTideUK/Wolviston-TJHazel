@@ -1,0 +1,68 @@
+.resources-header {
+	background-color: $brand;
+	.inner {
+		max-width: $max-width;
+		margin: 0 auto;
+		padding: 50px 0;
+		@media only screen and (max-width : $max-width) {
+			padding: 50px 25px;
+		}
+		h3 {
+			font-family: $font-family-sans-serif;
+			color: #fff;
+			max-width: 750px;
+			margin-bottom: 2em;
+			line-height: 150%;
+			&:after {
+				background-color: white;
+			}
+			@media only screen and (max-width : $small-screen-width) {
+				font-size: 1.3rem;
+			}
+		}
+		.body {
+			max-width: 500px;
+		}
+	}
+}
+
+.resources-content {
+	background-color: white;
+	.inner {
+		max-width: $max-width;
+		margin: 0 auto;
+		padding: 50px 0;
+		@media only screen and (max-width : $max-width) {
+			padding: 50px 25px;
+		}
+		h3 {
+			color: $brand;
+			margin-bottom: 1em;
+			line-height: 150%;
+			&:after {
+				background-color: black;
+			}
+			@media only screen and (max-width : $small-screen-width) {
+				font-size: 1.3rem;
+			}
+		}
+		.items {
+			.item {
+				border-bottom: 1px solid $brand;
+				padding-bottom: 20px;
+				margin: 20px 0;
+				h4 {
+					margin-bottom: 1em;
+					line-height: 150%;
+					font-weight: 300;
+					@media only screen and (max-width : $small-screen-width) {
+						font-size: 1rem;
+					}
+					a {
+						color: black;
+					}
+				}
+			}
+		}
+	}
+}

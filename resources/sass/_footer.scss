@@ -1,0 +1,43 @@
+.footer-links {
+	background-color: $dark_grey;
+	text-align: center;
+	padding: 25px;
+	ul {
+		display: inline;
+		margin: 0;
+		text-align: center;
+		margin: 0;
+		li {
+			display: inline-block;
+			list-style: none;
+			color: #ccc;
+			padding: 0 1em;
+			a {
+				color: #ccc;
+				text-decoration: none;
+			}
+			@media only screen and (max-width : $medium-screen-width) {
+				display: block;
+			}
+		}
+	}
+}
+
+.footer-logo {
+	background-color: $brand;
+	color: white;
+	text-align: center;
+	padding: 25px;
+	p {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+	img {
+		height: 35px;
+		width: auto;
+		vertical-align: text-bottom;
+		display: inline-block;
+		margin: 0 10px;
+	}
+}

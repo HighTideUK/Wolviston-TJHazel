@@ -1,0 +1,16 @@
+main.auth_form {
+	background-color: $dark_blue;
+	height: 100%;
+	.container {
+		padding: 100px 0;
+		background-color: $dark_blue;
+		.logo {
+			width: 50%;
+			margin: 50px auto;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

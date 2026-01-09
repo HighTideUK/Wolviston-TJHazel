@@ -1,0 +1,80 @@
+.register-wrapper {
+	.inner {
+		display: flex;
+		max-width: $max-width;
+		margin: 50px auto;
+		@media only screen and (max-width : $max-width) {
+			flex-direction: column;
+			margin: 25px;
+		}
+		section {
+			width: 100%;
+			h3 {
+				font-size: 2rem;
+				color: $brand;
+				margin-bottom: 1em;
+				&.short-bottom-border:after {
+					background-color: $dark_blue;
+				}
+			}
+			.info {
+				margin: 1em 0;
+				p {
+					margin: 0;
+				}
+			}
+			h4 {
+				font-size: 2em;
+				font-family: $font-family-sans-serif;
+				margin: 1.5em 0 0.5em 0;
+				color: $brand;
+			}
+			.buttons {
+				margin: 3em 0 2em 0;
+				.btn {
+					margin-right: 10px;
+				}
+				.apply {
+					background-color: $teal;
+					border-color: $teal;
+				}
+				.register {
+					background-color: white;
+					color: black;
+				}
+			}
+			.back-link {
+				margin-bottom: 25px;
+				a {
+					color: #000;
+					&:hover {
+						color: $brand;
+					}
+				}
+			}
+			.register-form {
+				max-width: 500px;
+				form {
+					margin: 20px 0 0 0;
+					.input-row {
+						margin: 10px 0;
+						&.buttons {
+							display: flex;
+							width: 100%;
+							margin-top: 50px;
+							@media only screen and (max-width : $small-screen-width) {
+								flex-direction: column;
+							}
+							.btn {
+								&[type="submit"] {
+									background-color: $teal;
+									border-color: $teal;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

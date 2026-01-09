@@ -1,0 +1,282 @@
+@import '../variables';
+@import '../toastr';
+@import '../admin/modals';
+@import '../admin/layout';
+@import '../admin/forms';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	background-color: #eee;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    background-color: #000;
+}
+
+th, td {
+	font-size: 0.9rem;
+}
+
+.btn-primary {
+	background-color: $brand-primary;
+	border-color: $brand-primary;
+	&:hover {
+		background-color: darken($brand-primary, 20%);
+		border-color: darken($brand-primary, 20%);
+	}
+	&:disabled {
+		background-color: lighten($brand-primary, 10%);
+		border-color: lighten($brand-primary, 10%);
+	}
+}
+
+.btn-outline-primary {
+	border-color: $brand-primary;
+	color: $brand-primary;
+	&:disabled {
+		border-color: #ccc;
+		color: #666;
+	}
+}
+
+.btn, button {
+	border-radius: 4px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0.4em 0.7em;
+	&.btn-link {
+		color: $brand-primary;
+	}
+	&.btn-lg {
+		font-size: 1.2rem;
+	}
+	&.btn-info {
+		color: #fff;
+	}
+}
+
+.pagination .page-item {
+	.page-link {
+		color: $brand-primary;
+		font-weight: 700;
+	}
+	&.active .page-link {
+		color: white;
+		border-color: $brand-primary;
+		background-color: $brand-primary;
+	}
+}
+
+a {
+	color: $brand-primary;
+	text-decoration:none;
+	-webkit-transition:color 0.2s ease-in-out;
+	-moz-transition:color 0.2s ease-in-out;
+	-o-transition:color 0.2s ease-in-out;
+	transition:color 0.2s ease-in-out;
+	&:hover {
+		color: #000;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	font-style: normal;
+	font-weight: 300;
+}
+
+.content-wrap {
+	width: 100%;
+	margin: 0 auto;
+	@media only screen and (max-width : 1140px) {
+		padding: 10px;
+	}
+}
+
+main.content {
+	min-height: 500px;
+}
+
+img.full-width, img.responsive {
+	width: 100%;
+}
+
+.swal2-popup .swal2-title {
+	color: #000;
+	font-size: 1.5em;
+}
+
+#toast-container > div {
+	opacity: 1;
+}
+
+.body-header {
+	background-color: $brand-primary;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+	h2 {
+		margin: 0;
+		font-weight: 700;
+	}
+	p {
+		margin: 0;
+	}
+	.options {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		div.item {
+			margin: 0 5px;
+		}
+	}
+}
+
+.align-right {
+	text-align: right;
+}
+
+.note {
+	color: #999;
+}
+
+.verified {
+	color: $verified;
+	&.fa-stack {
+		font-size: 10px;
+		margin-left: 6px;
+	}
+}
+
+.approved {
+	color: $verified;
+	.fa-stack {
+		margin-left: 0;
+	}
+}
+
+.not-approved {
+	color: #999;
+	.verified {
+		color: #ccc;
+	}
+	.fa-stack {
+		margin-left: 0;
+	}
+}
+
+.published {
+	color: green;
+	font-size: 1.25em;
+}
+
+.not-published {
+	color: #999;
+	font-size: 1.25em;
+}
+
+.valign-center {
+	align-items: center;
+}
+
+.card {
+	border: none;
+	.card-body {
+		padding: 2rem;
+	}
+}
+
+.nav-tabs {
+	border-color: $brand-primary;
+	.nav-link {
+		color: #666;
+		&.active, &:focus {
+			border-color: $brand-primary;
+			border-bottom-color: white;
+			color: $brand-primary;
+			background-color: white;
+		}
+		&:hover {
+			border-bottom-color: transparent;
+		}
+	}
+}
+
+.tab-content {
+	padding: 1em 0;
+}
+
+.edit_sub_category {
+	padding: 0 0.75rem 0.75rem 0.75rem;
+	display: flex;
+	align-items: center;
+	input[type="text"] {
+		width: auto;
+		margin-right: 1em;
+	}
+}
+
+.edit_sub_categories {
+	.edit_field, .edit_field_buttons {
+		display: none;
+	}
+}
+
+.toggle-category-courses:hover,
+.toggle-course-events:hover {
+	text-decoration: none;
+}
+
+.category-courses, .course-events {
+	display: none;
+	.inner {
+		padding-top: 1em;
+		padding-left: 2em;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.no-items {
+			color: #999;
+		} 
+	}
+}
+
+.filter-courses {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+	.options {
+		width: 50%;
+	}
+}
+
+.gu-mirror {
+	margin: 10px; 
+	padding: 10px; 
+	background-color: rgba(0, 0, 0, 0.2); 
+	transition: all 0.4s ease-in-out; 
+	cursor: move; 
+	cursor: grab; 
+	cursor: -moz-grab; 
+	cursor: -webkit-grab;
+	.action-buttons {
+		display: none;
+	}
+}

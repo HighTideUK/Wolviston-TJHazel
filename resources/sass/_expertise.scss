@@ -1,0 +1,110 @@
+.page-expertise .header-message {
+	background-image: url(/images/arrow_off_white_right.png);
+	background-position: right center;
+	background-color: #ECE8E9;
+}
+
+.expertise-article {
+	@media only screen and (max-width : 1000px) {
+		padding: 0 25px;
+	}
+	.inner {
+		width: 1000px;
+		margin: 50px auto;
+		@media only screen and (max-width : 1000px) {
+			width: 100%;
+		}
+		h3 {
+			font-family: $font-family-sans-serif;
+			color: $brand;
+			font-size: 1.6em;
+			font-weight: 600;
+			width: 60%;
+			margin-bottom: 1.5em;
+			&:after {
+				background-color: $brand;
+			}
+			@media only screen and (max-width : 1000px) {
+				width: 100%;
+			}
+		}
+		.body {
+			width: 40%;
+			@media only screen and (max-width : 1000px) {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.expertise-article-block {
+	background-color: $brand;
+	.contact-block {	
+		width: $max-width;
+		background-color: transparent;
+		margin: 0 auto;
+		display: flex;
+		@media only screen and (max-width : $max-width) {
+			width: 100%;
+			flex-direction: column;
+		}
+		.contact-block-inner {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			@media only screen and (max-width : $max-width) {
+				display: block;
+				padding: 25px;
+			}
+			.body {
+				width: 80%;
+				@media only screen and (max-width : $max-width) {
+					width: 100%;
+				}
+				h4 {
+					margin-bottom: 0.5em;
+					&:after {
+						background-color: white;
+					}
+					span {
+						color: $dark_blue;
+					}
+				}
+				p {
+					.label {
+						color: $dark_blue;
+					}
+					&.social {
+						a {
+							color: white;
+							font-size: 20px;
+							display: inline-block;
+							margin-right: 10px;
+							&:hover {
+								color: $dark_blue;
+							}
+						}
+					}
+				}
+				a {
+					color: white;
+				}
+			}
+		}
+		.image {
+			width: 400px;
+			flex: none;
+			@media only screen and (max-width : $max-width) {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+.page-expertise .header-message .right-block {
+	padding: 25px 0;
+}

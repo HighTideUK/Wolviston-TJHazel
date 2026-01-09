@@ -1,0 +1,33 @@
+$max-width: 1200px;
+$large-screen-width: 1200px;
+$medium-screen-width: 1000px;
+$small-screen-width: 600px;
+
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-serif: 'Montserrat', serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #03B2A9;
+$cyan: #6cb2eb;
+$verified: #3EC1F0;
+
+$brand: #EF323F;
+$brand-primary: #EF323F;
+$dark_blue: #121E29;
+$dark_grey: #364049;
+$light_grey: #F1EFEE;
+$glow: 0 0 1em rgba(0, 0, 0, 0.3);

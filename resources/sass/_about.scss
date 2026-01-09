@@ -1,0 +1,99 @@
+.about-us-block {
+	background-color: white;
+	.right-block {
+		max-width: 600px;
+		@media only screen and (max-width : $medium-screen-width) {
+			max-width: none;
+		}
+		h4 {
+			font-family: $font-family-sans-serif;
+			font-size: 17px;
+			color: $brand;
+			margin-bottom: 1em;
+		}
+	}
+}
+
+.about-block {
+	.inner {
+		display: flex;
+		align-items: center;
+		@media only screen and (max-width : $max-width) {
+			flex-direction: row;
+		}
+		@media only screen and (max-width : 800px) {
+			flex-direction: column;
+		}
+		.body, .image {
+			flex-basis: 0;
+			flex-grow: 1;
+		}
+		.body {
+			height: 100%;
+			h3 {
+				span {
+					color: black;
+					font-size: 20px;
+					font-family: $font-family-sans-serif;
+					font-weight: 400;
+					display: block;
+				}
+				line-height: 100%;
+				font-size: 30px;
+				color: $brand;
+				margin-bottom: 0.5em;
+				&:after {
+					background-color: black;
+				}
+			}
+			p {
+				color: $brand;
+				font-size: 1.2em;
+			}
+			.inside {
+				padding: 0 50px 0 50px;
+				@media only screen and (max-width : $max-width) {
+					padding: 0 25px 0 25px;
+				}
+				@media only screen and (max-width : 800px) {
+					padding: 25px;
+				}
+			}
+		}
+		.image img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&.reversed {
+		.inner {
+			flex-direction: row-reverse;
+			background-color: #ECE8E9;
+			@media only screen and (max-width : 800px) {
+				flex-direction: column;
+			}
+		}
+	}
+	&.brand {
+		.inner {
+			background-color: $brand;
+			h3, p {
+				color: white;
+			}
+			a.block-outline-btn {
+				color: white;
+				border-color: white;
+			}
+		}
+	}
+}
+
+.page-about .block-inner .body {
+	padding: 25px 0;
+	a {
+		color: $brand;
+		&:hover {
+			color: black;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.modal-container {
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 2em;
+	box-shadow: $glow;
+	position: relative;
+	.mfp-close {
+		top: 20px;
+		right: 20px;
+	}
+	.modal-title {
+		margin-bottom: 0.6em;
+	}
+}
