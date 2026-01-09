@@ -59,6 +59,12 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
 
+    "audit": {
+        "ignore": [
+            "PKSA-8qx3-n5y5-vvnd"
+        ]
+    },
+
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
