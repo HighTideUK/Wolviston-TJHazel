@@ -60,9 +60,7 @@
     "prefer-stable": true,
 
     "audit": {
-        "ignore": [
-            "PKSA-8qx3-n5y5-vvnd"
-        ]
+        "block-insecure": false
     },
 
     "scripts": {
